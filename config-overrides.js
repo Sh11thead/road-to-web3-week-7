@@ -10,7 +10,7 @@ module.exports = function override(config) {
       "path": require.resolve("path-browserify"),
       "os": require.resolve("os-browserify"), 
       "url": require.resolve("url") 
-      }) 
+      })
    config.resolve.fallback = fallback; 
    config.plugins = (config.plugins || []).concat([ 
    	new webpack.ProvidePlugin({ 

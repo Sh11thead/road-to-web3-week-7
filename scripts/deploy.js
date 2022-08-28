@@ -3,8 +3,6 @@ const hre = require("hardhat");
 const fs = require("fs");
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
-  const balance = await deployer.getBalance();
   const Marketplace = await hre.ethers.getContractFactory("NFTMarketplace");
   const marketplace = await Marketplace.deploy();
 
